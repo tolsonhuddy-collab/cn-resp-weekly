@@ -1,0 +1,10 @@
+# 原始 PDF（约 143MB）不入库；解析结果缓存 raw/en/*.parsed.json + *.json 元数据入库
+raw/en/*.pdf
+raw/zh/
+__pycache__/
+*.pyc
+scrape.log
+preview/
+mockup/
+.env
+*.key

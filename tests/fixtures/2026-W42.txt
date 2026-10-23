@@ -1,0 +1,166 @@
+WHO Collaborating Center for Reference and Research on Influenza
+Chinese National Influenza Center
+National Institute for Viral Disease Control and Prevention, China CDC
+Email: fluchina@ivdc.chinacdc.cnWebsite: https://ivdc.chinacdc.cn/cnic/en/
+
+           Chinese Weekly Influenza Surveillance Report
+                        October 12 to October 18, 2026 (Week 42)
+       (All data are preliminary and may change as more reports are received)
+
+Summary
+    The positive rate of influenza virus testing increased slightly in southern and
+     northern provinces, with A(H3N2) dominated. There were 28 ILI outbreaks
+     reported in this week.
+    Among influenza viruses antigenically characterized by CNIC since March 30,
+     2026, 72(94.7%) influenza A(H1N1)pdm09 viruses were characterized as
+     A/Missouri/11/2025-like;         355(82.6%)       influenza     A(H3N2)     viruses     were
+     characterized      as    A/Darwin/1454/2025(egg)-like,             387(90.0%)    influenza
+     A(H3N2)viruses          were     characterized      as      A/Darwin/1415/2025(cell)-like;
+     605(93.7%)        influenza      B/Victoria       viruses      were     characterized     as
+     B/Tokyo/EIS13-175/2025-like.
+    Among the influenza viruses tested by CNIC for antiviral resistance analysis
+     since March 30, 2026, all A(H1N1)pdm09 viruses were sensitive to
+     neuraminidase inhibitors, all but 1 A(H3N2) and 2 B/Victoria viruses were
+     sensitive to neuraminidase inhibitors; all A(H1N1)pdm09, A(H3N2) and
+     B/Victoria viruses were sensitive to influenza polymerase inhibitors.
+
+
+Surveillance of outpatient or emergency visits for Influenza-like Illness (ILI)
+     During week 42, the percentage of outpatient or emergency visits for ILI (ILI%)
+at national sentinel hospitals in southern provinces was 4.5%, lower than last week
+(4.6%), lower than the same week of 2023(5.3%), higher than the same week of 2024
+and 2025 (3.3% and 3.8%). (Figure 1)
+
+
+
+
+                              Chinese Weekly Influenza Surveillance Report | Week 42
+                                                                                               1
+WHO Collaborating Center for Reference and Research on Influenza
+Chinese National Influenza Center
+National Institute for Viral Disease Control and Prevention, China CDC
+Email: fluchina@ivdc.chinacdc.cnWebsite: https://ivdc.chinacdc.cn/cnic/en/
+
+
+
+
+Figure 1. Percentage of Visits for ILI at Sentinel Hospitals in Southern Provinces
+Note: Analysis in this part was based on data from sentinel hospitals belong to national influenza
+surveillance network.
+
+
+     During week 42, ILI% at national sentinel hospitals in northern provinces was
+2.8%, lower than last week (3.0%), lower than the same week of 2023 and 2024
+(3.6% and 3.4%), the same as the same week of2025(2.8%).(Figure 2)
+
+
+
+
+Figure 2. Percentage of Visits for ILI at Sentinel Hospitals in Northern Provinces
+Note: Analysis in this part was based on data from sentinel hospitals belong to national influenza
+
+surveillance network.
+
+
+
+
+                              Chinese Weekly Influenza Surveillance Report | Week 42
+                                                                                                 2
+WHO Collaborating Center for Reference and Research on Influenza
+Chinese National Influenza Center
+National Institute for Viral Disease Control and Prevention, China CDC
+Email: fluchina@ivdc.chinacdc.cnWebsite: https://ivdc.chinacdc.cn/cnic/en/
+Virologic Surveillance
+
+
+     During week in 42 of 2026, influenza network laboratories tested 20287
+pecimens, there were 2454 positive detections for influenza. The number and
+proportion of influenza types and subtypes detected in southern and northern
+provinces were shown in Table1.
+         Table 1．Laboratory Detections of ILI Specimens (Week 42, 2026)
+
+                                                                    Week 42
+
+                                     Southern provinces         Northern provinces      Total
+
+    No. of specimens tested                  10685                      9602           20287
+
+No. of positive specimens (%)            2085(19.5%)                 369(3.8%)       2454(12.1%)
+
+          Influenza A                    1358(65.1%)                264(71.5%)       1622(66.1%)
+
+        A(H1N1)pdm09                      205(15.1%)                110(41.7%)       315(19.4%)
+
+            A(H3N2)                      1153(84.9%)                154(58.3%)       1307(80.6%)
+
+  A (subtype not determined)                   0                             0           0
+
+          Influenza B                     727(34.9%)                105(28.5%)       832(33.9%)
+
+   B (lineage not determined)                  0                             0           0
+
+            Victoria                     727(100.0%)                105(100.0%)      832(100.0%)
+
+           Yamagata                            0                             0           0
+
+
+
+
+                              Chinese Weekly Influenza Surveillance Report | Week 42
+                                                                                             3
+WHO Collaborating Center for Reference and Research on Influenza
+Chinese National Influenza Center
+National Institute for Viral Disease Control and Prevention, China CDC
+Email: fluchina@ivdc.chinacdc.cnWebsite: https://ivdc.chinacdc.cn/cnic/en/
+
+
+
+
+ Figure 3. Influenza Positive Tests Reported by Southern Network Laboratories
+   Note: Analysis in this part was based on the test results of network laboratories. If it were not
+  consistent with the results of CNIC confirmation, the results of CNIC confirmation were used.
+
+
+
+
+  Figure 4. Influenza Positive Tests Reported by Northern Network Laboratories
+  Note: Analysis in this part was based on the result of network laboratories. If it were not
+consistent with the results of CNIC confirmation, the results of CNIC confirmation were used.
+
+
+
+Antigenic Characterization
+     Since March 30, 2026, 72(94.7%) influenza A(H1N1)pdm09 viruses were
+characterized as A/Missouri/11/2025-like; 355(82.6%) influenza A(H3N2) viruses
+were characterized as A/Darwin/1454/2025(egg)-like, 387(90.0%) influenza A(H3N2)
+viruses were characterized as A/Darwin/1415/2025(cell)-like;                 605(93.7%) influenza
+B/Victoria viruses were characterized as B/Tokyo/EIS13-175/2025-like.
+
+
+
+
+                              Chinese Weekly Influenza Surveillance Report | Week 42
+                                                                                                  4
+WHO Collaborating Center for Reference and Research on Influenza
+Chinese National Influenza Center
+National Institute for Viral Disease Control and Prevention, China CDC
+Email: fluchina@ivdc.chinacdc.cnWebsite: https://ivdc.chinacdc.cn/cnic/en/
+Antiviral Resistance
+     Since March 30, 2026, among the influenza viruses tested by CNIC for antiviral
+resistance, all A(H1N1)pdm09 viruses were sensitive to neuraminidase inhibitors, all
+but 1 A(H3N2) and 2 B/Victoria viruses were sensitive to neuraminidase inhibitors;
+all A(H1N1)pdm09, A(H3N2) and B/Victoria viruses were sensitive to influenza
+polymerase inhibitors.
+
+
+Outbreak Surveillance
+     During week 42, there were 28 ILI outbreaks reported nationwide. Among them,
+7 were A(H3N2), 8 were A(H1N1)pdm09, 1 was B/Victoria, 6 were mixed, 6 had not
+obtained the testing results.
+
+
+
+
+                              Chinese Weekly Influenza Surveillance Report | Week 42
+                                                                                       5
+

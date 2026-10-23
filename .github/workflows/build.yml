@@ -1,0 +1,46 @@
+name: build-and-deploy
+on:
+  schedule:
+    - cron: "0 10 * * 4,5"   # UTC 10:00 = 日本时间 周四/周五 19:00
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils fonts-noto-cjk
+          pip install pillow
+      - name: online build（数据源不可达时沿用缓存）
+        run: |
+          set -o pipefail
+          python3 -m cnflu.build 2>&1 | tee build.log || { echo "::warning::在线构建失败，改用离线缓存"; python3 -m cnflu.build --offline; }
+      - name: tests
+        run: python3 -m unittest discover -s tests
+      - name: commit data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898729+github-actions[bot]@users.noreply.github.com"
+          git add -A raw data site
+          if git diff --cached --quiet; then echo "无变化"; else git commit -m "数据更新 $(date -u +%F)" && git push; fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: "${{ steps.d.outputs.page_url }}" }
+    steps:
+      - id: d
+        uses: actions/deploy-pages@v4
