@@ -2038,13 +2038,6 @@
   "page_date": "2021-03-26"
  },
  {
-  "year": 2020,
-  "week": 10,
-  "detail_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202103/t20210319_224766.htm",
-  "pdf_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202103/P020210319694423569045.pdf",
-  "page_date": "2021-03-19"
- },
- {
   "year": 2021,
   "week": 9,
   "detail_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202103/t20210312_224631.htm",
@@ -2352,5 +2345,12 @@
   "detail_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202005/t20200501_216524.htm",
   "pdf_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202005/P020200501790269397247.pdf",
   "page_date": "2020-05-01"
+ },
+ {
+  "year": 2020,
+  "week": 10,
+  "detail_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202103/t20210319_224766.htm",
+  "pdf_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202103/P020210319694423569045.pdf",
+  "page_date": "2021-03-19"
  }
 ]
