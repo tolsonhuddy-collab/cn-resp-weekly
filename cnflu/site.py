@@ -280,7 +280,17 @@ CSS = f"""*{{box-sizing:border-box}}body{{margin:0;background:{C['bg']};color:{C
 .tb{{width:100%;font-size:12px;border-collapse:collapse}}.tb td{{padding:3px 2px;border-top:1px solid {C['grid']}}}.tb tr:first-child td{{color:{C['mut']};border:0}}.tb .cu{{color:{C['cur']};font-weight:700}}.tb .ex{{color:#b0b0b0}}
 .nav{{display:flex;justify-content:space-between;font-size:13px}}.nav a{{color:{C['blue']}}}.arc a{{display:inline-block;margin:2px;padding:3px 6px;border-radius:6px;font-size:12px;text-decoration:none;color:{C['ink']}}}
 @media(max-width:760px){{.g2,.sn{{grid-template-columns:1fr}}.ks{{grid-template-columns:1fr 1fr}}}}
-.api textarea,.api input{{width:100%;padding:8px;border:1px solid {C['grid']};border-radius:8px;font:inherit}}.api button{{margin-top:6px;padding:7px 14px;border:0;border-radius:8px;background:{C['blue']};color:#fff}}.api #ao{{white-space:pre-wrap;font-size:14px;margin-top:8px}}"""
+.api textarea,.api input{{width:100%;padding:8px;border:1px solid {C['grid']};border-radius:8px;font:inherit}}.api button{{margin-top:6px;padding:7px 14px;border:0;border-radius:8px;background:{C['blue']};color:#fff}}.api #ao{{white-space:pre-wrap;font-size:14px;margin-top:8px}}
+@media(min-width:600px){{.fam .w{{max-width:1100px;padding:18px 20px}}
+.fam #wk{{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;align-items:start}}.fam #wk>*{{grid-column:1/-1;min-width:0}}.fam #wk>.ks{{order:-2}}.fam #wk>.cd:nth-of-type(3){{order:-1}}.fam #wk>.cd:nth-of-type(2),.fam #wk>.cd:nth-of-type(4){{grid-column:auto}}.fam #wk>.cd:nth-of-type(4) .tg3{{grid-template-columns:repeat(2,1fr)}}.fam h2.hx{{white-space:nowrap;gap:8px}}
+.fam #wk>.ks{{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}}.fam .tg3{{grid-template-columns:repeat(4,1fr)}}.fam .tg{{grid-template-columns:repeat(3,1fr)}}.fam .ng{{grid-template-columns:repeat(3,1fr)}}
+.fam .br{{grid-template-columns:56px 1fr 40px 10px 66px;font-size:12.5px}}}}
+@media(min-width:600px) and (max-width:759px){{.fam #wk>.cd:nth-of-type(2),.fam #wk>.cd:nth-of-type(4){{grid-column:1/-1}}.fam #wk>.cd:nth-of-type(4) .tg3{{grid-template-columns:repeat(3,1fr)}}}}
+@media(min-width:1100px){{.w,.wide .w,.fam .w{{max-width:1280px;padding:22px 28px}}h1{{font-size:24px}}h2{{font-size:18px}}.cd{{padding:18px 20px}}
+.kl{{font-size:13.5px}}.kv{{font-size:38px}}.k{{padding:14px 16px}}.cs b{{font-size:20px}}.cs i,.lg{{font-size:13px}}.br{{font-size:14px;margin:6px 0}}.fam .br{{grid-template-columns:70px 1fr 48px 10px 80px;font-size:14px}}.bf{{height:16px}}
+.fam #wk{{gap:0 18px;grid-template-columns:5fr 7fr}}.fam #wk>.cd:nth-of-type(3){{order:0;grid-column:auto}}.fam #wk>.cd:nth-of-type(4){{grid-column:1/-1}}.fam #wk>.cd:nth-of-type(4) .tg3{{grid-template-columns:repeat(6,1fr)}}.fam .tg{{grid-template-columns:repeat(6,1fr)}}.fam .ng{{grid-template-columns:repeat(4,1fr)}}.tv{{font-size:26px}}.tn{{font-size:14px}}.nc{{padding:12px}}
+.tabs a{{font-size:14px;padding:6px 14px}}.wsb select{{font-size:14px}}.ft{{font-size:12px}}.tb{{font-size:13.5px}}.tb td{{padding:5px 4px}}}}
+"""
 
 MOTION = True  # 网站动效开关（feed 与分享卡始终静态）
 JS = """<script>
@@ -322,7 +332,7 @@ def page(c, tab, body, depth=0, wide=False, extra="", weeks=None, tail=""):
     if c.mp: src += f'、<a href="{esc(c.mp[-1].get("url", "https://www.chinacdc.cn/jksj/jksj04_14275/"))}">中国疾控中心哨点监测</a>；多病原历史部分来自第三方整理 cn_cdc_crawl（已与自抓数据核对）'
     return (f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>换季健康看板 · {("家庭版", "专业版")[tab]} · {r["year"]}年第{r["week"]}周</title><meta name="description" content="换季健康看板{("家庭版", "专业版")[tab]}：中国流感与呼吸道病原体监测图表"><meta property="og:image" content="{pre}cards/{slug(r)}.png">'
-            f'<link rel="alternate" type="application/rss+xml" href="{pre}feed.xml"><style>{CSS}</style></head><body class="{"wide" if wide else ""}"><div class="w">'
+            f'<link rel="alternate" type="application/rss+xml" href="{pre}feed.xml"><style>{CSS}</style></head><body class="{"wide" if wide else "fam"}"><div class="w">'
             f'<div class="top"><h1><a href="{pre}index.html">换季健康看板</a> {"" if weeks else f'<small style="font-size:12px;color:{C["mut"]}">{r["year"]}年第{r["week"]}周</small>'}</h1>'
             f'<div class="tabs"><a href="{pre}index.html" class="{"on" if tab == 0 else ""}">家庭版</a> <a href="{pre}pro.html" class="{"on" if tab == 1 else ""}">专业版</a></div></div>'
             + (f'<div class="wsb"><select id="ws" title="选择周次">' + "".join(f'<option value="{w}">{lab}</option>' for w, lab, _ in weeks) + '</select> <span id="we" class="lg"></span></div>'
@@ -338,9 +348,15 @@ def new_months(nd, r):
 def feed_item(c, url, nm=()):
     r = c.r; rows = [("流感阳性率（全国）", r.get("pos_total"), c.d("pos_total"), c.fp)]
     rows += [(NM[k] + "（门急诊）",) + c.mpk(k) for k in ["新型冠状病毒", "呼吸道合胞病毒", "肺炎支原体"]] if c.mp else []
-    tr = "".join(f"<tr><td>{n}</td><td><b>{v}%</b></td><td>{arrow(d)[0]} {'' if d is None else abs(d)}</td><td>{M.level(p)}（分位{p}%）</td></tr>" for n, v, d, p in rows)
-    body = (f'<p><img src="{SITE_URL}cards/{slug(r)}.png" alt="{r["year"]}年第{r["week"]}周"/></p>'
-            f'<table><tr><th>指标</th><th>本周</th><th>较上周（百分点）</th><th>与往年比</th></tr>{tr}</table>'
+    # 明暗主题通用：不设背景色/文字色，边框用半透明灰；箭头用两种主题下都可读的中间色
+    td_ = 'style="padding:4px 8px;border:1px solid rgba(128,128,128,.35);text-align:left"'
+    FC = {"▲": "#e4572e", "▼": "#4a8fc0"}
+    def ar(d):
+        a = arrow(d)[0]
+        return f'<span style="color:{FC[a]}">{a}</span>' if a in FC else a
+    tr = "".join(f"<tr><td {td_}>{n}</td><td {td_}><b>{v}%</b></td><td {td_}>{ar(d)} {'' if d is None else abs(d)}</td><td {td_}>{M.level(p)}（分位{p}%）</td></tr>" for n, v, d, p in rows)
+    body = (f'<p><img src="{SITE_URL}cards/{slug(r)}.png" alt="{r["year"]}年第{r["week"]}周" width="1200" height="630" style="width:100%;max-width:600px;height:auto"/></p>'
+            f'<table style="border-collapse:collapse;font-size:14px;max-width:100%"><tr>' + "".join(f'<th {td_}>{h}</th>' for h in ("指标", "本周", "较上周（百分点）", "与往年比")) + f'</tr>{tr}</table>'
             + (f'<p>重点关注：{NM.get(c.focus)}</p>' if c.focus else "")
             + "".join(f'<p>新月报：{m["ym"][:4]}年{int(m["ym"][5:])}月法定传染病 · ' + " · ".join(f'{SHORTN.get(k, k)} {v[0]:,}例' for k, v in m["d"].items() if k in ("流行性感冒", "百日咳", "猩红热", "流行性腮腺炎", "手足口病")) + '</p>' for m in nm)
             + f'<p>南方 ILI% {r.get("ili_south")}% · 北方 ILI% {r.get("ili_north")}% · 南方阳性率 {r.get("pos_south")}% · 北方阳性率 {r.get("pos_north")}%</p>'
