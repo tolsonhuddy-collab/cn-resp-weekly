@@ -1,6 +1,13 @@
 [
  {
   "year": 2026,
+  "week": 43,
+  "detail_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202610/t20261030_1842570.htm",
+  "pdf_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202610/P020261030369434919053.pdf",
+  "page_date": "2026-10-29"
+ },
+ {
+  "year": 2026,
   "week": 42,
   "detail_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202610/t20261023_1842432.htm",
   "pdf_url": "https://ivdc.chinacdc.cn/cnic/en/Surveillance/WeeklyReport/202610/P020261023491493295606.pdf",
